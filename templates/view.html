@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:background-image="http://www.w3.org/1999/xhtml"
+      xmlns:background-color="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Frequent Subgraph Mining </title>
+   <!-- core STATIC/CSS -->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/css/font-awesome.min.css" rel="stylesheet">
+    <link href="static/css/animate.min.css" rel="stylesheet">
+    <link href="static/css/owl.carousel.css" rel="stylesheet">
+    <link href="static/css/owl.transitions.css" rel="stylesheet">
+    <link href="static/css/main.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="static/js/html5shiv.js"></script>
+    <script src="static/js/respond.min.js"></script>
+    <![endif]-->
+
+</head><!--/head-->
+
+<body   id="home" class="homepage" >
+   <div> <h3 align="center" style="color:#051c42;">Efficient Mining of Frequent Patterns on Uncertain Graphs </h3></div>
+    <header id="header">
+        <nav id="main-menu" class="navbar navbar-default navbar-fixed-top top-nav-collapse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="templates/index.html"><img src="static/images/graph.jpg" alt="logo"></a>
+                </div>
+
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+
+
+                        <li class="scroll "><a href="/">Home </a></li>
+                        <li class="scroll "><a href="/upload">Upload Dataset </a></li>
+                        <li class="scroll active"><a href="/viewdata">View Data </a></li>
+                        <li class="scroll"><a href="/preprocess">Preprocessing</a></li>
+                       <li class="scroll"><a href="/support">Support</a></li>
+                        <li class="scroll"><a href="/tables">Tables</a></li>
+                        <li class="scroll"><a href="/bar_chart">Graph</a></li>
+
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+    </header><!--/header-->
+    <h3 align="center"  color="red">View Data </h3>
+<div align="center"  style="background-color:red; color:white;">
+    {% block content %}
+
+<h3 style="background-color:black;">{{name}}</h3>
+    <div  style="background-color:#193a4a">
+    <font color="white">
+{{data | safe}}
+    </font>
+        </div>
+{% endblock %}
+
+</div>
+</body>
+
+</html>
